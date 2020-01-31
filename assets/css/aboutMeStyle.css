@@ -1,0 +1,51 @@
+/* ############# */
+/* CSS VARIABLES */
+/* ############# */
+
+* {
+  /* color palette */
+  --color-box: 242, 242, 242;
+  --alpha: 0.5;
+
+  /* font families */
+  --main-font: 'Karla', sans-serif;
+}
+
+.aboutContainer {
+  background: rgb(var(--color-box));
+  width: 420px;
+  height: 420px;
+  padding: 40px;
+  
+  /* center container */
+  position: absolute;
+  float: left;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  /* fonts */
+  font-family: var(--main-font);
+  text-align: left;
+  clear: both;
+}
+
+.bioContents {
+  position: relative;
+  bottom: -20px;
+}
+
+h1 {
+  text-align: center;
+    font-weight: bold;
+    font-size: larger;
+
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+#portrait {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}

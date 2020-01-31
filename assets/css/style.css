@@ -1,0 +1,105 @@
+/* ############# */
+/* CSS VARIABLES */
+/* ############# */
+
+* {
+  /* color palette */
+  --bkgnd-gradTop: 0, 132, 255;
+  --bkgnd-gradBtm: 255, 255, 255;
+  --color-box: 242, 242, 242;
+  --color-nameBlock: 75, 74, 74;
+  --color-border: 242, 242, 242;
+  --alpha: 0.5;
+
+  /* font families */
+  --main-font: 'Karla', sans-serif;
+}
+
+/*###############*/
+/* BODY SETTINGS */
+/*###############*/
+  body {
+    background-image: linear-gradient(rgb(var(--bkgnd-gradTop)), rgb(var(--bkgnd-gradBtm)));
+    min-height: 1000px;
+  }
+
+/*################*/
+/* NAVIGATION BAR */
+/*################*/
+  .navBar {
+    font-family: var(--main-font);
+    margin: 20px;
+  }
+
+  hr {
+    position: relative;
+    bottom: 7px;
+    border-color: rgb(var(--color-nameBlock));
+    background: rgb(var(--color-nameBlock));
+    border-width: 0.5px;
+  }
+
+  /* name icon in header */
+  #nameBlock {
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    color: white;
+    width: 200px;
+    background: rgb(var(--color-nameBlock));
+    padding-top: 5px;
+    padding-bottom: 5px;
+    float: left;
+  }
+  
+  /* navigation bar links */
+  .headerLinks {
+    position: relative;
+    text-align: center;
+    bottom: -15px;
+    margin-left: 75%;
+  }
+
+  /* link settings */
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  #aboutLink {
+    float: left;
+    width: 100px;
+    /* background: grey; */
+  }
+  #portfolioLink {
+    float: left;
+    width: 100px;
+    /* background: grey; */
+  }
+  #contactLink {
+    float: left;
+    width: 100px;
+    /* clear: both; */
+    /* background: grey; */
+  }
+
+#footerBreakLine {
+  position: relative;
+    top : 875px;
+    border-color: rgb(var(--color-nameBlock));
+    background: rgb(var(--color-nameBlock));
+    border-width: 0.5px;
+}
+
+/*########*/
+/* FOOTER */
+/*########*/
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    color: black;
+    font-family: var(--main-font);
+    font-size: x-small;
+    text-align: center;
+  }

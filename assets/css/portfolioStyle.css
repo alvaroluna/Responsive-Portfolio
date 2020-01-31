@@ -1,0 +1,99 @@
+/* ############# */
+/* CSS VARIABLES */
+/* ############# */
+
+* {
+    /* color palette */
+    --color-box: 242, 242, 242;
+    --alpha: 0.5;
+  
+    /* font families */
+    --main-font: 'Karla', sans-serif;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+
+  /* Center website */
+  .main {
+    background: rgb(var(--color-box));
+    width: 500px;
+    height: 500px;
+    
+    /* center container */
+    position: absolute;
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    /* fonts */
+    font-family: var(--main-font);
+    text-align: left;
+    padding: 40px;
+  }
+  
+  h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+  h3 {
+    position: relative;
+    bottom: 30px;
+    z-index: 3;
+    text-align: center;
+    background: rgb(var(--color-box));
+    color: black;
+    width: 70px;
+}
+
+.row {
+    position: relative;
+    bottom: -50px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 0px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+/* background-color: white; */
+    font-family: var(--main-font);
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
